@@ -1,0 +1,24 @@
+%% setting for delay embedding (DE)
+% delay step, depend on frequency of the signal
+DE_step = 4; 
+% delay dimension
+DE_dim = 8;
+% sliding step
+DE_slid = 8; 
+
+  TranStruct.intervals(loop) = intervals;
+    % create the barcode plots
+     options.filename = 'ripsTorus';
+     options.max_filtration_value = max_filtration_value;
+     options.max_dimension = max_dimension - 1;
+     options.side_by_side = true;
+     plot_barcodes(intervals, options);
+    % UCI_CharacterTrajectories.persistence
+    
+    
+    max_dimension = 2;
+    max_filtration_value = 10;%??
+    num_divisions = size(x, 1);
+    
+    
+    
